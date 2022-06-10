@@ -1,0 +1,170 @@
+/* Mobile styles */
+.headerCont {
+    background-color: #0E0F0E;
+    border-bottom: 1px solid #CAB466;
+}
+
+.headerCont > * {
+    width: 100%;
+}
+
+.col1 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+  display:flex;
+  align-items: center;
+}
+
+.logoImg {
+    color: "#CAB466";
+    margin-right: 1rem;
+    display: block;
+    width: 2rem;
+}
+
+.logoText {
+    color: #CAB466;
+    font-size: 2rem;
+}
+
+.logoCompanyInitial {
+    font-weight: bold;
+}
+
+.menu {
+    position: relative;
+}
+
+.menuItems {
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background: #000;
+    color: #CAB466;
+    top: 0;
+    left: -70%;
+    z-index: 100;
+    font-size: 2rem;
+    transition: left .235s ease-out;
+    /* font-weight: bold; */
+}
+
+.menuItem {
+    padding: 1.5rem 2rem;
+    transition: all .2s linear;
+}
+.menuItem:hover {
+    background-color: #CAB466;
+    color: #000;
+    /* opacity: 0; */
+}
+
+.joinLinkBtn {
+    display: block;
+    border:none;
+    border-radius: 3px;
+    padding:10px 15px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #CAB466;
+    color:#000000;
+    font-size: 1.4rem;
+    transform: translateY(50%);
+    transition: transform .15s linear;
+}
+
+.joinLinkBtn:hover {
+    transform: translateY(-3px);
+}
+
+/* Tablet styles */
+@media screen and (min-width: 500px) {
+    .headerCont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.8rem 2.5rem;
+        border: none;
+    }
+
+    .col1 {
+        justify-content: flex-start;
+        align-items: none;
+        padding: 0;
+    }
+    
+    .logo {
+      display:block;
+      align-items: none;
+      margin-right: 65.7rem;
+    }
+    
+    .logoImg {
+        color: "#CAB466";
+        margin-right: 0;
+        display: block;
+        width: 2.5rem;
+    }
+    
+    .logoText {
+        color: #CAB466;
+        font-size: 2.3rem;
+    }
+    
+    .logoCompanyInitial {
+        font-weight: bold;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .col2 { 
+        display: flex;
+        align-items: center;
+    }
+
+    .joinLinkBtn {
+        margin: 0 0 0 auto;
+        width: 75%;
+        height: fit-content;
+        font-size: 2rem;
+        transform: translateY(0%);
+        transition: transform .15s linear;
+    }
+    
+    .joinLinkBtn:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .logo {
+      display:flex;
+      align-items: center;
+    }
+    
+    .logoImg {
+        color: "#CAB466";
+        margin-right: 1rem;
+        display: block;
+        width: 3rem;
+    }
+    
+    .logoText {
+        color: #CAB466;
+        font-size: 2.5rem;
+    }
+    
+    .joinLinkBtn {
+        font-size: 1.4rem;
+        width: 50%;
+    }
+    
+}

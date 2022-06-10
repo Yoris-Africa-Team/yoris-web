@@ -1,0 +1,54 @@
+.brandCont {
+    position: relative;
+    width: 100%;
+    height: 44vh;
+}
+
+.brandImg {
+    width: 120%;
+    height: 100%;
+}
+.brandTextCont {
+    color: white;
+    position: absolute;
+    left: 10%;
+    bottom: 14%;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .brandCont {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .brandTextCont {
+        right: 15%;
+        bottom: 20%;
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .brandCont {
+        position: relative;
+        width: 100%;
+        height: 130vh;
+    }
+    
+    .brandImg {
+        object-fit: cover;
+    }
+
+    .brandTextCont {
+        position: absolute;
+        left: 25%;
+        font-size: 3rem;
+        right: auto;
+        bottom: 20%;
+        font-size: 2rem;
+        width: fit-content;
+    }
+}
+/* so if you set the image element frame size correctly it would not */

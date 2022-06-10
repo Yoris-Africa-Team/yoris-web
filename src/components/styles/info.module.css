@@ -1,0 +1,127 @@
+.infoWrap {
+    position: relative;
+    height: 65vh;
+}
+
+.infoWrap > * {
+    height: fit-content;
+}
+
+.infoContWrap {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 44%;
+}
+
+.infoText {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.appLinkCont {
+    margin-left: -1rem;
+}
+
+.infoAppLink {
+    display: block;
+    width: 100%;
+}
+
+.infoPhoneCont {
+    position: absolute;
+    width: 55%;
+    left: -11%;
+    top: 50%;
+    transform: rotate(14deg) translateY(-50%);
+    z-index: 10;
+}
+
+.infoPhoneImg {
+    display: block;
+    object-fit: contain;
+    padding: 0;
+}
+
+
+/* Tablet Styles */
+@media screen and (min-width: 500px) {
+    .infoWrap {
+        position: relative;
+        height: 70vh;
+    }
+    
+    .infoContWrap {
+        position: absolute;
+        top: 50%;
+        right: auto;
+        left: 13%;
+        transform: translateY(-50%);
+        width: 44%;
+    }
+    
+    .infoText {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 2.5rem;
+    }
+    
+    .infoAppLink {
+        display: block;
+        width: 75%;
+    }
+    
+    .infoPhoneCont {
+        position: absolute;
+        width: 40%;
+        left: auto;
+        right: 18%;
+        top: 46%;
+        z-index: 10;
+    }
+    
+    .infoPhoneImg {
+        display: block;
+        object-fit: contain;
+    }    
+}
+
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .infoWrap {
+        position: relative;
+        height: 85vh;
+    }
+
+    .infoContWrap {
+            position: absolute;
+            top: 50%;
+            left: 16%;
+            transform: translateY(-50%);
+            width: 30%;
+    }
+    
+    .infoAppLink {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    .infoPhoneCont {
+        position: absolute;
+        width: 32%;
+        right: 15%;
+        top: 1%;
+        z-index: 10;
+        transform: rotate(0) translate(0);
+        /* display: none; */
+    }
+    
+    .infoPhoneImg {
+        display: block;
+        object-fit: contain;
+        padding: 0;
+    } 
+}

@@ -1,0 +1,232 @@
+.cont {
+    background: #0E0F0E;
+    color:white;
+    width:100%;
+    display:flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2.5rem 0;
+    font-size: 1.2rem;
+}
+
+.footerLeftCol {
+    margin-bottom:2.5rem;
+}
+
+.logoCont {
+    display: none;
+}
+
+.footerLogo {
+    width: 4rem;
+    margin-right: 1.5rem;
+}
+
+.appLinkCont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.appLinkImg {
+    width: 40%;
+    height: 30%;
+}
+
+.desc {
+    text-align: center;
+}
+
+.descText {
+    line-height: 1.7;
+}
+
+.copyright {
+    color:#CAB466;
+    margin-bottom: .5rem;
+}
+
+.footerRightCol > *:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.navLinkCont {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+
+.navLink:first-child {
+   margin-right: 3rem;
+}
+
+.navLink {
+   cursor: pointer;
+   transition: color .15s linear;
+}
+
+.navLink:hover {
+   color: #CAB466;
+}
+
+.socialsCont {
+    display: flex;    
+    justify-content: center;
+}
+
+.socialIcon:not(:last-child) {
+    margin-right: 4rem;       
+}
+
+.socialIcon {
+    font-size: 1.65rem;
+    color: #CAB466;
+}
+
+.companyAddress {
+    display: flex;   
+    font-size: .9rem;
+}
+
+.companyLocation {
+    margin-left: .2rem;
+    align-self: center;
+    height: 100%;
+    display: block;
+}
+
+
+@media screen and (min-width: 500px) {
+    .cont {
+        justify-content:space-between;
+        padding: 5rem 4rem;
+        font-size: 1.8rem;
+    }
+    
+    .footerLeftCol {
+        display:flex;
+        align-items:center;
+    }
+    
+    .logoCont {
+        width: 4rem;
+        margin-right: 1.5rem;
+    }
+    
+    .appLinkCont {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    
+    .appLinkImg {
+        width: 40%;
+        height: 30%;
+    }
+    
+    .footerRightCol > *:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    
+    .navLinkCont {
+      font-weight: bold;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .navLink:first-child {
+       margin-right: 3rem;
+    }
+    
+    .navLink {
+       cursor: pointer;
+       transition: color .15s linear;
+    }
+    
+    .copyright {
+        color:#CAB466;
+    }
+    
+    .socialsCont {
+        display: flex;    
+    }
+    
+    .socialIcon:not(:last-child) {
+        margin-right: 4rem;       
+    }
+    
+    .socialIcon {
+        font-size: 2rem;
+        color: #CAB466;
+    }
+    
+    .companyAddress {
+        display: flex; 
+        font-size: 1.3rem;
+    }
+    
+    .companyLocation {
+        margin-left: .5rem;
+        align-self: center;
+        height: 100%;
+        display: block;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+    .cont {
+        flex-flow: row;
+        justify-content:space-between;
+        padding: 5rem 4rem;
+        font-size: 1.2rem;
+    }
+    
+    .footerLeftCol {
+        display:flex;
+        align-items: center;
+    }
+    
+    .logoCont {
+        width: 4rem;
+        margin-right: 2.3rem;
+        display: block;
+    }
+    
+    .appLinkCont {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 3rem;
+    }
+    
+    .desc {
+        text-align: start;
+    }
+
+    .footerRightCol > *:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    
+    .navLinkCont {
+      font-weight: bold;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      display: block;
+    }
+    
+    .socialsCont {
+        display: flex;    
+        justify-content: flex-start;
+    }
+    
+    .socialIcon {
+        font-size: 1.65rem;
+        color: #CAB466;
+        cursor: pointer;
+    }
+    
+    .companyAddress {
+        display: flex;
+    }
+}

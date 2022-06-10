@@ -1,0 +1,59 @@
+.cont {
+    background: #0E0F0E;
+    display: flex;
+    position: relative;
+    height: 44vh;
+}
+
+.ecommerceImg {
+    width: 120%;
+    height: 100%;
+}
+
+.textCont {
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    bottom: 0%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+
+@media screen and (min-width: 500px) {
+    .cont {
+        height: 80vh;
+    }
+
+    .ecommerceImg {
+        width: 100%;
+    }
+
+    .textCont {
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+        top: 78%;
+        left: 10%;
+        direction: ltr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cont {
+        height: 100vh;
+    }
+
+    .ecommerceImg {
+        width: 100%;
+    }
+
+    .textCont {
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+        top: 70%;
+        left: 15%;
+        direction: rtl;
+    }
+}

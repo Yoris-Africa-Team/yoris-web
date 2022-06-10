@@ -1,0 +1,51 @@
+*, 
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+  /* width: 100vw; */
+  height: 100vh;
+  
+}
+
+body {
+    /* width: 80vw; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.app-cont {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.app-cont > * {
+    width: 100%;
+}
+/* Utilities */
+.fx {
+    display: flex;
+}
+
+.fx-ai-c {
+    align-items: center;
+}
+
+.fx-jc-sb {
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}

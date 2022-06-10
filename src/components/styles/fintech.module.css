@@ -1,0 +1,61 @@
+.cont {
+    display: flex;
+    width: 100%;
+    background: #0E0F0E;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.textCont {
+    color: #fff;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    margin: 3.5rem auto;
+}
+
+.fintechImgCont {
+    width: 75%;
+}
+
+.fintechImg {
+    width:100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media screen and (min-width: 500px) {
+    .cont {
+        display: flex;
+        width: 100%;
+    }
+    
+    .textCont {
+        font-size: 2rem;
+        margin: 3.5rem auto;
+    }
+    
+    .fintechImgCont {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    
+    .fintechImg {
+        width:100%;
+        object-fit: contain;
+        display: block;
+    }   
+}
+
+@media screen and (min-width: 768px) {
+    .fintechImgCont {
+        width: 35%;
+    }
+    
+    .fintechImg {
+        width: 100%;
+        object-fit: contain;
+        display: block;
+    }   
+}

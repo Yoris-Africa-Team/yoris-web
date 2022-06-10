@@ -1,0 +1,42 @@
+
+const fs = require('fs');
+const VALID_KEYS_PATH = __dirname + '/valid-keys.txt';
+
+const middleware =  function (req, res, next) {
+  const foundKey = req.header.x-api-key
+
+  if(!foundKey) return res.status(401).send()
+  fs.readFile(VALID_KEYS_PATH, (err, data) => {
+    if(err) return res.status(401).send()
+
+    if(data.includes(foundKey)){
+      next()
+    }
+  })
+
+};
+
+
+module.exports = middleware
+
+
+const VALID_KEYS_PATH = __dirname + '/valid-keys.txt';
+const fs = require('fs');
+const shortid = require('shortid');
+// To generate a unique API KEY, use shortid.generate()
+const LINE_ENDING = require('os').EOL;
+
+
+module.exports = function (req, res) {
+const apiKey =shortid.generate()
+ const data = apiKey+LINE_ENDING
+
+  fs.appendFile(VALID_KEYS_PATH, data,'utf8', err=> {
+    if(err) return res.send("Could not save key")
+    res.status(201).send({apiKey:key})
+   
+  })
+  
+console.log("getkey",apiKey)
+};
+
